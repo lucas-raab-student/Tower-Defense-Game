@@ -7,7 +7,7 @@ public class Path : MonoBehaviour
 {
 
         [SerializeField] private List<Vector3> points = new List<Vector3>();
-         void Awake()
+          void Awake()
         {
             CollectPoints();
         }

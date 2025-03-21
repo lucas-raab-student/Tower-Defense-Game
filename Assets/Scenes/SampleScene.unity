@@ -521,6 +521,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 070604839f244dc40a69acd53e9b0701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  points: []
 --- !u!135 &182178558
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -639,6 +640,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 070604839f244dc40a69acd53e9b0701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  points: []
 --- !u!135 &193336719
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -757,6 +759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 070604839f244dc40a69acd53e9b0701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  points: []
 --- !u!135 &231073193
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -960,6 +963,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 070604839f244dc40a69acd53e9b0701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  points: []
 --- !u!135 &285174559
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1078,6 +1082,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 070604839f244dc40a69acd53e9b0701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  points: []
 --- !u!135 &285251935
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1833,6 +1838,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 070604839f244dc40a69acd53e9b0701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  points: []
 --- !u!135 &445981312
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1913,6 +1919,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 456438555}
+  - component: {fileID: 456438556}
   m_Layer: 0
   m_Name: Path
   m_TagString: Untagged
@@ -1955,6 +1962,19 @@ Transform:
   - {fileID: 1406092437}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &456438556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456438554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 070604839f244dc40a69acd53e9b0701, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: []
 --- !u!1 &488983846
 GameObject:
   m_ObjectHideFlags: 0
@@ -2201,6 +2221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 070604839f244dc40a69acd53e9b0701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  points: []
 --- !u!135 &542054337
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2350,6 +2371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 070604839f244dc40a69acd53e9b0701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  points: []
 --- !u!135 &573713111
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2468,6 +2490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 070604839f244dc40a69acd53e9b0701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  points: []
 --- !u!135 &600454101
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2586,6 +2609,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 070604839f244dc40a69acd53e9b0701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  points: []
 --- !u!135 &636919448
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2735,6 +2759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 070604839f244dc40a69acd53e9b0701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  points: []
 --- !u!135 &692857234
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3031,6 +3056,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 070604839f244dc40a69acd53e9b0701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  points: []
 --- !u!135 &737031933
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3264,6 +3290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 070604839f244dc40a69acd53e9b0701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  points: []
 --- !u!135 &861350762
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3874,6 +3901,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1071373438}
+  - component: {fileID: 1071373439}
   m_Layer: 0
   m_Name: ground
   m_TagString: Untagged
@@ -3965,6 +3993,18 @@ Transform:
   - {fileID: 6146858448902435033}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1071373439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1071373437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 139c7d43b48fabe45ac970105efe04d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1107922436
 GameObject:
   m_ObjectHideFlags: 0
@@ -4304,6 +4344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 070604839f244dc40a69acd53e9b0701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  points: []
 --- !u!135 &1257022663
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4484,6 +4525,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 070604839f244dc40a69acd53e9b0701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  points: []
 --- !u!135 &1406092439
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4770,6 +4812,53 @@ Transform:
   m_Children: []
   m_Father: {fileID: 378475966}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1636731872
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1636731874}
+  - component: {fileID: 1636731873}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1636731873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636731872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b3411d420b3cc94d8c166ca59a510dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawn: 1
+  prefab: {fileID: 249608243248465508, guid: f28ff55414c539e4481453ace3309d64, type: 3}
+  SpawnRate: 1
+--- !u!4 &1636731874
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636731872}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.7111, y: 1.19, z: 1.1313}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1657852139
 GameObject:
   m_ObjectHideFlags: 0
@@ -4901,6 +4990,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 070604839f244dc40a69acd53e9b0701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  points: []
 --- !u!135 &1671848540
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5050,6 +5140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 070604839f244dc40a69acd53e9b0701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  points: []
 --- !u!135 &1710534775
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5256,6 +5347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 070604839f244dc40a69acd53e9b0701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  points: []
 --- !u!135 &1890258247
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5719,6 +5811,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 070604839f244dc40a69acd53e9b0701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  points: []
 --- !u!135 &2051844078
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5837,6 +5930,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 070604839f244dc40a69acd53e9b0701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  points: []
 --- !u!135 &2056790241
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -11108,3 +11202,4 @@ SceneRoots:
   - {fileID: 1475618663}
   - {fileID: 424292159}
   - {fileID: 456438555}
+  - {fileID: 1636731874}
