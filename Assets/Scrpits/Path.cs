@@ -16,7 +16,6 @@ public class Path : MonoBehaviour
         {
             points = new List<Vector3>();
           
-            // Will require a GameObject to have a Grid script attached to it.
             Grid grid = FindObjectOfType<Grid>();
 
             for (int i = 0; i < transform.childCount; i++)

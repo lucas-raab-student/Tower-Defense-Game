@@ -12,17 +12,16 @@ namespace TowerDefense
         public int Damage ;
         private void Start()
         {
-            path = GetComponent<Path>();
+            path = FindObjectOfType<Path>();
             StartCoroutine(FollowPath());
         }
         IEnumerator FollowPath()
         {
-            Vector3 target; // Next target position
+            Vector3 target; 
             while (path.TryGetPoint(index, out target))
             {
                 Vector3 start = transform.position;
 
-                // Maximum distance to travel this loop.
                 float maxDistance = Mathf.Min(speed * Time.deltaTime, (target - start).magnitude);
                 transform.position = Vector3.MoveTowards(start, target, maxDistance);
 
@@ -30,10 +29,8 @@ namespace TowerDefense
                 transform.rotation = Quaternion.Lerp(transform.rotation,
                 Quaternion.LookRotation(target - start), 0.05f);
 
-                // Target position reached, next index.
                 if (transform.position == target) index++;
                 transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(target - start), 0.05f);
-                // Resume execution on the next frame.
                 yield return null;
             }
         }

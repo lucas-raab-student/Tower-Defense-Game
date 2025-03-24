@@ -27,10 +27,10 @@ namespace TowerDefense
             int GridZ=Mathf.RoundToInt(worldPosition.z);
             return new Vector3Int(GridZ, GridX, GridY); 
         }
-        public static Vector3Int WorldT0Grid(Vector3Int gridPostion)
+        public static Vector3Int GridToWorld(Vector3Int gridPostion)
         {
        
-            Vector3Int worldPosition = WorldT0Grid(gridPostion);
+            Vector3Int worldPosition = GridToWorld(gridPostion);
             return worldPosition;
         }
     }
