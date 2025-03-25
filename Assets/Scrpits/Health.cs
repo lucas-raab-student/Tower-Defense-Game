@@ -1,20 +1,23 @@
 using UnityEngine;
-
-public class Health : MonoBehaviour
+namespace TowerDefense
 {
-    public int health = 3;
-    public void TakeDamge(int DamageAmount)
+
+    public class Health : MonoBehaviour
     {
-        health -= DamageAmount;
-    }
-    public void TryDamage(GameObject target, int damageAmount)
-    {
-        
- Health TargetHealth=target.GetComponent<Health>();
-        if (target)
+        public int health = 3;
+        public void TakeDamge(int DamageAmount)
         {
-            TargetHealth.TakeDamge(damageAmount);
-            
+            health -= DamageAmount;
+        }
+        public static void  TryDamage(GameObject target, int damageAmount)
+        {
+
+            Health TargetHealth = target.GetComponent<Health>();
+            if (target)
+            {
+                TargetHealth.TakeDamge(damageAmount);
+
+            }
         }
     }
 }
