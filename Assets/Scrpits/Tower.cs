@@ -6,8 +6,8 @@ using UnityEngine;
 public class Tower : MonoBehaviour
 {
     [SerializeField]private List<GameObject> enemiesInRange = new List<GameObject>();
-    private int damage = 1;
-    private float fireRate = 2f;
+    public Tower_SO towerType;
+
     private bool Firing=false;
     IEnumerator DamagEnemyTarget()
     {
@@ -15,8 +15,8 @@ public class Tower : MonoBehaviour
         while(enemiesInRange.Count > 0)
         {
             if (!enemiesInRange[0]) enemiesInRange.RemoveAt(0);
-            else Health.TryDamage(enemiesInRange[0], damage);
-            yield return new WaitForSeconds(fireRate);
+            else Health.TryDamage(enemiesInRange[0], towerType.damage);
+            yield return new WaitForSeconds(towerType.firerate);
             
         }
         Firing = false;
