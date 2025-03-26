@@ -8,6 +8,7 @@ namespace TowerDefense
         public void TakeDamge(int DamageAmount)
         {
             health -= DamageAmount;
+            ValueDisplay.OnValueChanged.Invoke(gameObject.name + "Health", health);
         }
         public static void  TryDamage(GameObject target, int damageAmount)
         {

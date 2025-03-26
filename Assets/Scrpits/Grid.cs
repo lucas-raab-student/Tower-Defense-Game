@@ -25,13 +25,17 @@ namespace TowerDefense
             int GridX=Mathf.RoundToInt(worldPosition.x);
             int GridY=Mathf.RoundToInt(worldPosition.y);
             int GridZ=Mathf.RoundToInt(worldPosition.z);
-            return new Vector3Int(GridZ, GridX, GridY); 
+            return new Vector3Int(GridX, GridY, GridZ); 
         }
-        public static Vector3Int GridToWorld(Vector3Int gridPostion)
+        public static Vector3 GridToWorld(Vector3Int gridPosition)
         {
-       
-            Vector3Int worldPosition = GridToWorld(gridPostion);
-            return worldPosition;
+
+            return new Vector3(gridPosition.x, gridPosition.y, gridPosition.z);
+
+        }
+        public bool Occupied(Vector3Int tileCoordinates)
+        {
+            return gameObjects.ContainsKey(tileCoordinates);
         }
     }
 }

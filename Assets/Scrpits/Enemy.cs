@@ -33,6 +33,9 @@ namespace TowerDefense
                 transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(target - start), 0.05f);
                 yield return null;
             }
+            Player player = FindObjectOfType<Player>();
+            Health.TryDamage(player.gameObject, Damage);
+            Destroy(gameObject);
         }
     }
 
