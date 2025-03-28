@@ -19,6 +19,7 @@ namespace TowerDefense
         private Text DisplayText;
         void ValueChanged(string valueName,object value)
         {
+            print(valueName);
             if(this.ValueName==valueName)
             {
                 DisplayText.text=value.ToString();

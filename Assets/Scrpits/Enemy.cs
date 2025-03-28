@@ -9,7 +9,7 @@ namespace TowerDefense
         public Path path;
         public int index = 0;
         public float speed = 1f;
-        public int Damage ;
+        public int Damage  ;
         private void Start()
         {
             path = FindObjectOfType<Path>();

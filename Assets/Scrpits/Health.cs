@@ -4,21 +4,29 @@ namespace TowerDefense
 
     public class Health : MonoBehaviour
     {
-        public int health = 3;
-        public void TakeDamge(int DamageAmount)
+      
+        public int health = 10;
+        public void TakeDamage(int Damage)
         {
-            health -= DamageAmount;
-            ValueDisplay.OnValueChanged.Invoke(gameObject.name + "Health", health);
+        
+        
+            health -= Damage;
+            ValueDisplay.OnValueChanged.Invoke(  "PlayerHealth", health);
+        
         }
-        public static void  TryDamage(GameObject target, int damageAmount)
+        public static void  TryDamage(GameObject target, int Damage)
         {
 
             Health TargetHealth = target.GetComponent<Health>();
-            if (target)
+            if (TargetHealth)
             {
-                TargetHealth.TakeDamge(damageAmount);
+              
+                TargetHealth.TakeDamage(Damage);
+                
 
             }
+       
         }
+
     }
 }
