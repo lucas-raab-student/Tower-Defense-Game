@@ -6,12 +6,18 @@ namespace TowerDefense
     {
       
         public int health = 10;
-        public void TakeDamage(int Damage)
+        public void TakeDamage(int Damage,GameObject target)
         {
         
         
             health -= Damage;
-            ValueDisplay.OnValueChanged.Invoke(  "PlayerHealth", health);
+            Player player=target.GetComponent<Player>();
+            if (player)
+            {
+                ValueDisplay.OnValueChanged.Invoke("PlayerHealth", health);
+
+            }
+          
         
         }
         public static void  TryDamage(GameObject target, int Damage)
@@ -21,7 +27,7 @@ namespace TowerDefense
             if (TargetHealth)
             {
               
-                TargetHealth.TakeDamage(Damage);
+                TargetHealth.TakeDamage(Damage,target);
                 
 
             }

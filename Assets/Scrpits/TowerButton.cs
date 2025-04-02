@@ -8,7 +8,7 @@ namespace TowerDefense
         [RequireComponent(typeof(Button))]
         public class TowerButton : MonoBehaviour
         {
-            Button button;
+        Button button;
         private void OnClick()
         {
             Debug.Log("Im a button");
