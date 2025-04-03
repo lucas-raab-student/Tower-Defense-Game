@@ -10,16 +10,20 @@ namespace TowerDefense
         public GameObject towerPrefab;
         public int gold;
         Cursor cursor;
+        UICursorCapture cursorCapture;
+
+
 
         Grid grid;
         private void Awake()
         {
             grid = FindObjectOfType<Grid>();
+            cursorCapture = FindAnyObjectByType<UICursorCapture>();
             cursor = GetComponentInChildren<Cursor>();
         }
         private void Update()
         {
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0)&& !cursorCapture.cursorOverUi)
             {
                 TryPlaceTower(grid, Grid.WorldToGrid(cursor.transform.position));
             }
